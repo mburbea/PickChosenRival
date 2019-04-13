@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>8a5f0fc1-ab7f-466e-bbd2-f2483d96d54e</Guid>
+    <Name>PickChosenRival</Name>
+    <Description>Pick the faction that rivals your chosen</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>PickChosenRival</AssemblyName>
+    <RootNamespace>PickChosenRival</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\PickChosenRival\" />
+    <Folder Include="Src\PickChosenRival\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComPickChosenRival.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\PickChosenRival\Classes\PCR_XComGameState_HeadquartersAlien.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PickChosenRival\Classes\X2DownloadableContentInfo_PickChosenRival.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
