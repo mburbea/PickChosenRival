@@ -1,4 +1,4 @@
-class PCR_XComGameState_HeadquartersAlien extends XComGameState_HeadquartersAlien;
+class PCR_XComGameState_HeadquartersAlien extends XComGameState_HeadquartersAlien config(PickChosenRival);
 
 var config name Assassin_Rival;
 var config name Hunter_Rival;
@@ -33,7 +33,6 @@ function SetUpAdventChosen(XComGameState StartState)
 	{
 		AllFactions.AddItem(FactionState);
 	}
-	
 	for(idx = 0; idx < default.NumAdventChosen; idx++)
 	{
 		cFaction = AllFactions[idx].GetMyTemplateName();
@@ -60,7 +59,7 @@ function SetUpAdventChosen(XComGameState StartState)
 		{
 			if(AllChosen[i].DataName == TemplateName)
 			{
-				`log("Setting"@AllFactions[idx].GetMyTemplateName()@"against"@TemplateName,,'FixedChosenRivalries');
+				`log("Setting"@AllFactions[idx].GetMyTemplateName()@"against"@TemplateName,,'PickChosenRival');
 				RandIndex = i;
 				break;
 			}
